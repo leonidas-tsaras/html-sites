@@ -1,0 +1,40 @@
+main#about section.about-section {
+    display: flex;
+    gap: 8%;
+}
+
+main#about section.about-section div:nth-child(1) {
+    width: 60%;
+}
+
+/* main#about section.about-section div:nth-child(1) p {
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+} */
+
+main#about section.about-section div:nth-child(2) {
+    width: 40%;
+}
+
+main#about section.about-section div:nth-child(2) img {
+    width: 100%;
+}
+
+@media (max-width: 1300px) {
+    main#about section.about-section div:nth-child(1) {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+@media (max-width: 720px) {
+    main#about section.about-section {
+        flex-wrap: wrap;
+    }
+    main#about section.about-section div:nth-child(1) {
+        width: 100%;
+    }
+    main#about section.about-section div:nth-child(2) {
+        width: 100%;
+    }
+}

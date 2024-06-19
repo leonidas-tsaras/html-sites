@@ -1,0 +1,44 @@
+
+main#price-list section.category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+main#price-list section.category div {
+    width: 23.5%;
+    margin: 3rem 0;
+}
+
+main#price-list section.category div h2 {
+    margin: 1rem 0;
+}
+
+main#price-list section.category div img {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    main#price-list section.category div {
+        width: 32%;
+    }
+}
+
+@media (max-width: 800px) {
+    main#price-list section.category {
+        gap: 4%;
+    }
+    main#price-list section.category div {
+        width: 48%;
+    }
+}
+
+@media (max-width: 460px) {
+    main#price-list section.category {
+        gap: 0%;
+    }
+
+    main#price-list section.category div {
+        width: 100%;
+    }
+}

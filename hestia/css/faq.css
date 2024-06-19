@@ -1,0 +1,10 @@
+header {
+    background-color: var(--primaryColor);
+}
+
+main#faq > div {
+    background-color: var(--primaryVeryLightColor);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-left: 5px solid var(--primaryColor);
+}

@@ -1,0 +1,133 @@
+
+main#home section {
+    margin: 3.5rem 0;
+}
+
+/* section a */
+main#home section.plate-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 6%;
+}
+
+main#home section.plate-text div {
+    width: 100%;
+}
+main#home section.plate-text div img {
+    width: 100%;
+}
+
+main#home section.plate-text div:nth-child(2) h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2.25rem;
+    color: var(--textColor);
+}
+
+main#home section.plate-text div:nth-child(2) h5 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: var(--textColor);
+}
+
+
+/* section b */
+main#home section.recent-posts {
+    text-align: center;
+}
+main#home section.recent-posts h3 {
+    font-size: 2.7rem;
+    margin: 0, 0, 4rem;
+}
+main#home section.recent-posts p {
+    padding: 0 25%;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+/* section recipes */
+main#home section.recipes {
+    display: flex;
+    justify-content: space-between;
+}
+
+main#home section.recipes div {
+    width: 30%;
+}
+
+main#home section.recipes div article {
+    width: 100%;
+    margin: 2rem 0;
+}
+main#home section.recipes div article img {
+    width: 100%;
+}
+main#home section.recipes div article p {
+    margin: 1rem 0;
+    line-height: 1.5rem;
+}
+main#home section.recipes div article h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+main#home section.recipes div article a {
+    color: var(--firstColor);
+    border-bottom: dotted thin var(--firstColor);
+}
+
+
+main#home section.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 600px; */
+    /* height: 50%; */
+    width: 100%;
+    height: 50vw;
+
+    background-image: url(../images/home/plate-a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+main#home section.newsletter div {
+    text-align: center;
+}
+
+main#home section.news-letter {
+    width: 100%;
+    position: relative;
+}
+main#home section.news-letter div {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    text-align: center;
+    background-color: bisque;
+
+}
+main#home section.news-letter img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+@media (max-width: 720px) {
+    main#home section.recipes {
+        flex-wrap: wrap;
+    }
+
+    main#home section.recipes div {
+        width: 100%;
+    }
+
+    main#home section.plate-text {
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+    }
+}

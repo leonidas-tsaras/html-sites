@@ -1,0 +1,27 @@
+main#desserts > section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+main#desserts > section > div {
+    width: 48%;
+    margin-bottom: 2rem;
+}
+main#desserts > section > div > figure > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+}
+main#desserts > section > div > figure > figcaption {
+    margin-top: 1rem;
+    line-height: 180%;
+}
+
+@media screen and (max-width: 800px) {
+    main#desserts > section > div {
+        width: 100%;
+    }
+}

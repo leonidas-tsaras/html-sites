@@ -1,0 +1,115 @@
+
+/*         html, body {
+        height: 100%;
+    } */
+div#front-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/home/front.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* background-position: bottom -50px right 0px; */
+    background-size: cover;
+
+}
+
+div#front-page>h1 {
+    color: white;
+    font-size: 4rem;
+    /* font-size: 4vw; */
+    font-weight: 500;
+    /* margin-left: 160px; */
+    margin: auto 5%;
+    line-height: 125%;
+    margin-bottom: 10rem;
+}
+
+main#home>h2 {
+    margin: 3rem 0px;
+    text-align: center;
+}
+
+main#home>img.full-width-image {
+    width: 100%;
+    aspect-ratio: 1.6;
+/*     height: 680px;
+    object-fit: cover; */
+}
+
+
+main#home > section.two-images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin: 5rem 0;
+}
+
+main#home > section.two-images > img {
+    width: 49%;
+    aspect-ratio: 784/680;
+}
+
+
+main#home > section.two-columns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+}
+
+main#home>section.two-columns > div:nth-child(1) {
+    width: 70%;
+    padding: 0 5rem;
+}
+
+main#home>section.two-columns>div:nth-child(1) > h5 {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 150%;
+}
+
+main#home>section.two-columns>div:nth-child(2) {
+    width: 30%;
+    padding: 0 3rem;
+}
+
+main#home>section.two-columns>div:nth-child(2) > p {
+    line-height: 180%;
+    margin-bottom: 1.5rem;
+}
+
+main#home>section.two-columns>div:nth-child(2) > a {
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: var(--primaryColor);
+    padding: 1.5rem 0;
+    transition: all 0.5s;
+}
+
+main#home>section.two-columns>div:nth-child(2)>a:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+    main#home > section.two-images > img {
+        width: 100%;
+    }
+
+    main#home > section.two-columns {
+        flex-wrap: wrap;
+    }
+
+    main#home>section.two-columns > div:nth-child(1) {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    main#home>section.two-columns > div:nth-child(2) {
+        width: 100%;
+    }
+
+}
+
