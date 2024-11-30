@@ -1,0 +1,119 @@
+form#contact-form {
+    width: 100%;
+    border: solid thin rgb(230, 230, 230);
+    margin: auto;
+    margin-top: 100px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(230, 230, 230);
+    border-radius: 10px;
+}
+
+form#contact-form h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+    margin-bottom: 1.5rem;
+}
+
+form#contact-form p {
+    text-align: center;
+    font-size: 8rem;
+    color: var(--primaryColor);
+    line-height: 5.5rem;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+    /* position: relative;
+    top: -4rem; */
+
+}
+
+form#contact-form input {
+    display: block;
+    width: 100%;
+    border: solid thin var(--primaryColor);
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    color: var(--primaryColor);
+}
+
+form#contact-form input:focus {
+    /* background-color: rgb(255, 218, 177); */
+    /* border-bottom: double 2px rgb(255, 185, 100); */
+    outline: solid thin var(--primaryColor);
+}
+
+form#contact-form input::placeholder {
+    color: var(--lightPrimaryColor);
+}
+
+form#contact-form textarea {
+    display: block;
+    width: 100%;
+    border: solid thin var(--primaryColor);
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    color: var(--primaryColor);
+}
+form#contact-form textarea::placeholder {
+    color: var(--lightPrimaryColor);
+}
+form#contact-form textarea:focus {
+    /* background-color: rgb(255, 218, 177); */
+    /* border-bottom: double 2px rgb(255, 185, 100); */
+    outline: solid thin var(--primaryColor);
+}
+
+form#contact-form input[type='submit'] {
+    width: fit-content;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: var(--lightPrimaryColor);
+    color: var(--primaryColor);
+}
+
+main#contact > section.two-cols {
+width: 80%;
+margin: auto;
+display: flex;
+justify-content: space-between;
+}
+
+main#contact > section.two-cols > div {
+width: 48%;
+}
+
+main#contact > section.two-cols > div > a {
+display: block;
+color: var(--primaryColor);
+font-weight: bold;
+margin: 0.7rem 0;
+}
+
+main#contact > section.two-cols > div > p {
+margin: 0.7rem 0;
+}
+
+main#contact > section.two-cols > div > h2 {
+margin-bottom: 1.5rem;
+font-size: 2.5rem;
+font-weight: 500;
+line-height: 3.5rem;
+}
+
+@media screen and (max-width: 900px) {
+main#contact > section.two-cols {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 600px) {
+main#contact > section.two-cols {
+    flex-direction: column;
+}
+
+main#contact > section.two-cols > div {
+    width: 100%;
+    margin-top: 2rem;
+}
+}
