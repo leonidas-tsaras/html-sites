@@ -1,0 +1,58 @@
+main#home {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main#home div.product {
+    width: 24%;
+    /* border: solid thin greenyellow; */
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+main#home div.product:hover {
+    box-shadow: 5px 5px 5px rgb(239, 239, 239), -5px -5px 5px rgb(239, 239, 239);
+}
+
+main#home div.product h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+main#home div.product img {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    main#home div.product {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.top-heading > h1 {
+        font-size: 3rem;
+    }
+}        
+
+@media screen and (max-width: 720px) {
+    main#home div.product {
+        width: 49%;
+    }
+    section.top-heading > h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main#home div.product {
+        width: 100%;
+    }
+    section.top-heading > h1 {
+        font-size: 1.5rem;
+    }
+}

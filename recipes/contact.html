@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <section>
+            <div id = "logo">
+                <a href="home.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="desserts.html">Desserts</a>
+                <a href="price-list.html">Price list</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">faq</a>
+                <a class = "active" href="contact.html">Contact</a>
+            </nav>
+            <div id="burger-icon">☰</div>
+        </section>
+    </header>
+    <div id="wrapper">
+        <main id = "contact">
+            <h1>Contact us</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, optio praesentium eum nostrum assumenda, ipsa quod iure recusandae doloremque dolore molestias vel voluptates! Iure architecto reprehenderit, deleniti provident nemo sed.</p>
+            <section>
+                <div>
+                    <h3>Contact form</h3>
+                    <form action="" method="post">
+                        <label>Email:</label>
+                        <input type="email" name="email" value="">
+                        <label>Full Name:</label>
+                        <input type="text" name="name" value="">
+                        <label>Subject:</label>
+                        <input type="text" name="subject" value="">
+                        <label>Message:</label>
+                        <textarea name="message"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+                <div>
+                    <h3>Contact elements</h3>
+                    <h4>Address:</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h4>E-mail:</h4>
+                    <p>info@example.gr</p>
+                    <h4>Tel:</h4>
+                    <p>+30 1234567890</p>
+                    <h4>Social media</h4>
+                    <aside>
+                        <a href="mailto: info@myrestaurant.gr"><img src="images/email.svg" alt=""></a>
+                        <a href="https://facebook.com/restaurant"><img src="images/facebook.svg" alt=""></a>
+                        <a href="https://instagram.com/restaurant"><img src="images/instagram.svg" alt=""></a>
+                        <a href="https://messenger.com/restaurant"><img src="images/messenger.svg" alt=""></a>
+                        <a href="tel: +30 1234567890"><img src="images/whatsapp.svg" alt=""></a>
+                    </aside>
+                </div>
+            </section>
+
+            <section>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.6750455610722!2d23.80213922867324!3d38.00803941667239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a19851f193765f%3A0x63ae3d1b2b05310f!2zzpzOtc-Dzr_Os861zq_Pic69IDMwMCwgzqfOv867zrHPgc6zz4zPgiAxNTUgNjI!5e0!3m2!1sel!2sgr!4v1675708436729!5m2!1sel!2sgr"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+    
+    </div> <!-- end wrapper -->
+
+    <footer>
+        <div id = "footer-wrapper">
+            <div>
+                <a href="home.html">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div>
+                <h2>Usefull links</h2>
+                <nav>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">WhatsApp: +30 1234567890</a>
+                    <a href="#">Email: info@example.com</a>
+                    <a href="#">Tel: +30 1234567890</a>
+                </nav>
+            </div>
+            <div>
+                <h2>Follow New Listings</h2>
+                <p>Sign up with your email address to receive news and updates.</p>
+                <form onsubmit="sendEmail(event)">
+                    <input type="email" placeholder="Email address" value = "">
+                    <input type="submit" value="Sign up">
+                </form>
+                <p id = "message"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

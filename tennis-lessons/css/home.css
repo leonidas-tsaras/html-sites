@@ -1,0 +1,139 @@
+section.full-width-image {
+    width: 100%;
+    border: solid 2px goldenrod;
+    aspect-ratio: 4/1.3;
+    background-image: url(../images/home/top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.full-width-image h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: normal;
+    background-color: rgba(199, 110, 75, 0.7);
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+section.full-width-image p {
+    color: var(--primaryColor);
+    background-color: white;
+    font-size: 22px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+section.four-cols {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    margin: 2rem auto;
+    justify-content: space-between;
+}
+
+section.four-cols div {
+    width: 23%;
+    text-align: center;
+}
+
+section.four-cols div img {
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+
+section.four-cols div p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+section.four-cols div h2 {
+    margin: 0.5rem 0;
+    font-weight: 400;
+}
+
+section.two-cols {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    justify-content: space-between;
+}
+
+section.two-cols div {
+    width: 48%;
+    text-align: center;
+}
+
+section.two-cols div img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 5/3;
+}
+
+section.two-cols div h2 {
+    margin: 0.5rem 0;
+    font-weight: 400;
+    font-size: 26px;
+    color: var(--primaryColor);
+}
+
+section.two-cols div p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+section.light-gray {
+    width: 100%;
+    background-color: rgb(249, 247, 250);
+    padding: 6rem 0;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+section.light-gray h2 {
+    font-size: 70px;
+    color: var(--primaryColor);
+    font-weight: normal;
+}
+
+
+
+
+
+@media screen and (max-width: 960px) {
+    section.four-cols div {
+        width: 48%;
+        margin-bottom: 2rem;
+    }
+
+    section.full-width-image h1 {
+        font-size: 80px;
+        margin-bottom: 1rem;
+    }
+
+    section.full-width-image p span {
+        display: block;
+    }            
+}
+
+@media screen and (max-width: 600px) {
+    section.four-cols div {
+        width: 100%;
+    }
+
+    section.two-cols div {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    section.full-width-image h1 {
+        font-size: 60px;
+    }
+}        

@@ -1,0 +1,24 @@
+
+div.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p.border-bottom {
+    border-bottom: solid thin lightgray;
+    padding-bottom: 1rem;
+    color: gray;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border-bottom {
+    border-bottom: solid thin lightgray;
+}
+
+section {
+    margin-bottom: 30px;
+}

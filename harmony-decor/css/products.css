@@ -1,0 +1,69 @@
+
+main#products > img.top-image {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+main#products > section.two-cols {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main#products > section.two-cols > div {
+    width: 48%;
+}
+
+main#products > section.two-cols > div > img {
+    width: 100%;
+}
+main#products > section.two-cols > div > img:nth-child(1) {
+    margin-bottom: 2rem;
+}
+main#products > section.two-cols > div > img:nth-child(2) {
+    margin-top: 2rem;
+}
+
+main#products > section.two-cols > div > div.two-small-cols {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main#products > section.two-cols > div > div.two-small-cols > img {
+    width: 47%;
+}
+
+@media screen and (max-width: 900px) {
+    main#products > img.top-image {
+        width: 100%;
+    }
+
+    main#products > section.two-cols {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main#products > section.two-cols {
+        flex-direction: column;
+    }
+
+    main#products > section.two-cols > div {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main#products > section.two-cols > div > div.two-small-cols {
+        display: block;
+    }
+
+    main#products > section.two-cols > div > div.two-small-cols > img {
+        width: 100%;
+    }
+}

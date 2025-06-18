@@ -1,0 +1,57 @@
+figure.portfolio {
+  width: 31%;
+  margin-bottom: 2rem;
+}
+
+figure.portfolio img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+figure.portfolio>figcaption {
+  margin-top: 1rem;
+}
+
+figure.portfolio>figcaption>h3 {
+  margin-bottom: 0.5rem;
+}
+
+div.cards {
+  max-width: 920px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+div.our-work {
+  width: 100%;
+  background-color: #1f1e1e;
+  text-align: center;
+  color: white;
+  padding: 5rem 0;
+}
+
+div.our-work>h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+div.our-work>p {
+  line-height: 1.8rem;
+  display: inline-block;
+  width: 100%;
+  max-width: 632px;
+  padding: 0 1rem;
+}
+
+@media screen and (width < 980px) {
+  div.cards > figure {
+    width: 48%
+  }
+}
+
+@media screen and (width < 760px) {
+  div.cards > figure {
+    width: 100%
+  }
+}

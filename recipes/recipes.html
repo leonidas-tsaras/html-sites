@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/recipes.css">
+    <title>All Recipes</title>
+    <!-- https://nicepage.com/html-templates/preview/experience-in-our-restaurant-3814298?device=desktop -->
+</head>
+<body>
+    <header>
+        <section>
+            <div id = "logo">
+                <a href="home.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a class = "active" href="recipes.html">Recipes</a>
+                <a href="desserts.html">Desserts</a>
+                <a href="price-list.html">Price list</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">faq</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div id="burger-icon">☰</div>
+        </section>
+    </header>
+    <div id="wrapper">
+
+        <main id = "recipes">
+            <h1>Trendy Recipes</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, optio praesentium eum nostrum assumenda, ipsa quod iure recusandae doloremque dolore molestias vel voluptates! Iure architecto reprehenderit, deleniti provident nemo sed.</p>
+            <section>
+                <div>
+                    <!-- https://www.foodandwine.com/recipes/creamy-spaghetti-carbonara-peas-and-ham -->
+                    <h2>Spaghetti Carbonara</h2>
+                    <figure>
+                        <img src="./images/classic/carbonara.webp" alt="">
+                        <figcaption>Perfecting a luscious carbonara depends on treating the eggs just right. First, be sure to toss the cooked pasta with the sauce off the heat so that the eggs will cook evenly once they return to the heat. Second, since the sauce will continue to cook after it leaves the skillet, pull the carbonara off the heat a little sooner than you think you should so it’ll hit the table saucy and creamy.</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <h2>Caesar Salad</h2>
+                    <figure>
+                        <img src="./images/classic/caesar-salad.webp" alt="">
+                        <figcaption>Just a handful of ingredients come together to make a robust, well-balanced salad. This recipe stays true to the original version of Caesar salad, with crunchy romaine leaves, toasty croutons, and a savory dressing made with anchovies and garlic. A little help from Worcestershire sauce and lemon juice deepens the complexity of the dressing, while a generous scattering of shaved Parmesan makes the dish more substantial.</figcaption>
+                    </figure>
+                </div>       
+                
+                <div>
+                    <h2>Quiche Lorraine</h2>
+                    <figure>
+                        <img src="./images/classic/quiche-lorraine.webp" alt="">
+                        <figcaption>Crisp bacon bits and Gruyère cheese flavor this rich and creamy classic quiche, which is encased in a flaky butter-based crust. The secret to the quiche's super-silky texture is the small amount of sour cream whisked into the eggs. Be sure to use pie weights or baking beans when you blind-bake the crust, so it holds its shape and doesn't shrink in the oven.</figcaption>
+                    </figure>
+                </div>  
+
+                <div>
+                    <h2>Bouillabaisse</h2>
+                    <figure>
+                        <img src="./images/classic/bouillabaisse.webp" alt="">
+                        <figcaption>Chef Ludo Lefebvre’s bouillabaisse starts with a quick-cooking, but deeply flavored, seafood broth. Layering a base of aromatics with fresh snapper, scallops, shrimp, and a mix of Pernod and dry white wine creates a long-simmered flavor in under an hour. Be sure to use shell-on shrimp; those shells add flavor and body to the stock. </figcaption>
+                    </figure>
+                </div>  
+
+            </section>
+            
+
+        </main>
+    
+    </div> <!-- end wrapper -->
+
+    <footer>
+        <div id = "footer-wrapper">
+            <div>
+                <a href="home.html">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div>
+                <h2>Usefull links</h2>
+                <nav>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">WhatsApp: +30 1234567890</a>
+                    <a href="#">Email: info@example.com</a>
+                    <a href="#">Tel: +30 1234567890</a>
+                </nav>
+            </div>
+            <div>
+                <h2>Follow New Listings</h2>
+                <p>Sign up with your email address to receive news and updates.</p>
+                <form onsubmit="sendEmail(event)">
+                    <input type="email" placeholder="Email address" value = "">
+                    <input type="submit" value="Sign up">
+                </form>
+                <p id = "message"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

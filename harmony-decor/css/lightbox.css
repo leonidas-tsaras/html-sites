@@ -1,0 +1,20 @@
+div.lightbox img {
+    height: 120px;
+    cursor: pointer;
+}
+
+div.shade {
+    background-color: rgba(138, 43, 226, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.shade > img {
+    height: 80%;
+}

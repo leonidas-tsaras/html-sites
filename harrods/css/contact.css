@@ -1,0 +1,78 @@
+main#contact > section:nth-child(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+/* contact-form -------------------------------------- */
+main#contact > section:nth-child(1) > form {
+    width: 175%;
+    padding: 1rem;
+    border: solid thin lightgray;
+}
+
+main#contact > section:nth-child(1) > form > label {
+    display: block;
+    width: 100%;
+    margin: 1rem 0 0.3rem;
+}
+
+main#contact > section:nth-child(1) > form > input,
+main#contact > section:nth-child(1) > form > textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem;
+    border: solid thin lightgray;
+    font-size: 1rem;
+}
+
+main#contact > section:nth-child(1) > form > textarea {
+    height: 6rem;
+}
+
+main#contact > section:nth-child(1) > form > input[type = 'submit'] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: solid thin lightgray;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+ /* contact-form -------------------------------------- */
+
+
+/* next to form */
+main#contact > section:nth-child(1) > div {
+    width: 100%;
+    padding: 1rem;
+    border: solid thin lightgray;
+}
+
+main#contact > section:nth-child(1) > div > p.social {
+    margin: 1rem 0;
+}
+main#contact > section:nth-child(1) > div > p.social a {
+    padding: 0.2rem;
+    margin: 1rem;
+}
+
+ /* map section */
+ main#contact > section:nth-child(2) {
+    width: 100%;
+    margin: 2rem 0;
+}
+ main#contact > section:nth-child(2) > iframe {
+    height: 20rem;
+    width: 100%;
+}
+
+/* 480x320 640x480 640x360 800x600 960x640 1024x768 1280x720 1280x768 1280×800 1280×1024 1366×768 1440×900 1536×864 1920×1080 */
+@media screen and (max-width: 800px) {
+    main#contact > section:nth-child(1) {
+        display: block;
+    }
+}

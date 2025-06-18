@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <script src="./js/main.js"></script>
+    <title>Contact</title>
+    <script>
+
+        function validateContactForm() {
+            event.preventDefault();
+            let form = document.querySelector("form#contact-form");
+            let result = document.querySelector("div p#result");
+            let fullName = document.querySelector('input[placeholder="Full Name"]');
+            if(fullName.value == "") {
+                //alert("Please fill in Full Name");
+                result.textContent = "Please fill in Full Name";
+                return;
+            }
+
+            let subject = document.querySelector('input[placeholder="Subject"]');
+            if(subject.value == "") {
+                //alert("Please fill in Subject");
+                result.textContent = "Please fill in Subject";
+                return;
+            }
+
+            let email = document.querySelector('input[type="email"]');
+            if(email.value == "") {
+                //alert("Please fill in E-mail");
+                result.textContent = "Please fill in E-mail";
+                return;
+            }
+
+            let message = document.querySelector('textarea');
+            if(message.value == "") {
+                //alert("Please fill in Message");
+                result.textContent = "Please fill in Message";
+                return;
+            }
+
+            
+            //form.submit();
+            form.reset();
+            result.classList.add("success");
+            result.textContent = "Thanks for contacting us";
+            result.classList.remove("success");
+            //alert("Thanks for contacting us");
+        }
+
+    </script>
+</head>
+<body>
+
+    <div id="wrapper">
+        <header>
+            <div id='logo'>
+                <a href="home.html"><img src="./images/hestia-logo.svg" alt=""></a>
+            </div>
+            <nav id = "main-menu">
+                <a href="home.html">Home</a>
+                <a href="apartments.html">Apartments</a>
+                <a href="about.html">About</a>
+                <a href="location.html">Location</a>
+                <a href="faq.html">FAQ</a>
+                <a class = "active" href="contact.html">Contact</a>
+            </nav>
+            <!-- <span id = "burger-icon">☰</span> -->
+            <nav class="icon-container">
+                <div></div>
+                <div></div>
+                <div></div>
+            </nav>
+            <nav id = "burger-menu" class = "hidden">
+                <a href="home.html">Home</a>
+                <a href="apartments.html">Apartments</a>
+                <a href="about.html">About</a>
+                <a href="location.html">Location</a>
+                <a href="faq.html">FAQ</a>
+                <a class = "active" href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main id = "contact">
+            <section>
+                <div>
+                    <h3>Connect With Us</h3>
+                    <table class = "connect">
+                        <tr>
+                            <td>
+                                <h4><img src="./images/contact/location.svg"> LOCATION</h4>
+                                <p>123 Demo Street<br>
+                                Athens, Greece 12345</p>
+                            </td>
+                            <td>
+                                <h4><img src="./images/contact/phone.svg"> MAIN PHONE</h4>
+                                <p>+1 (555) 555-5555</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4><img src="./images/contact/maintenance.svg"> MAINTENANCE PHONE</h4>
+                                <p>+1 (555) 555-5555</p>
+                            </td>
+                            <td>
+                                <h4><img src="./images/contact/email.svg">EMAIL</h4>
+                                <p>email@example.com</p>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <h4>Social Media</h4>
+                    <p id = "social-icons">
+                        <a target="_blank" href="https://facebook.com/">
+                            <img src="./images/social/facebook.svg">
+                        </a>
+                        <a target="_blank" href="https://instagram.com/">
+                            <img src="./images/social/instagram.svg">
+                        </a>
+                        <a target="_blank" href="https://whatsapp.com/">
+                            <img src="./images/social/whatsapp.svg">
+                        </a>
+                        <a target="_blank" href="mailto:info@example.com">
+                            <img src="./images/social/email.svg">
+                        </a>
+                        <!-- 
+                        <a target="_blank" href="tel:+301234567890">
+                            <img src="./images/social/tel.svg">
+                        </a> 
+                        -->
+                    </p>
+                </div>
+                <div>
+                    <h3>We'd love to hear from you</h3>
+                    <form id="contact-form" action = "contact.php" onsubmit="validateContactForm()">
+                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Subject">
+                        <input type="email" placeholder="E-mail">
+                        <textarea maxlength="100" placeholder="Message (up to 100 characters)"></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                    <p id = "result" class = "error"></p>
+                </div>
+            </section>
+
+            <iframe id="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.669245380397!2d23.80209934727762!3d38.00817468322261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a19851f193765f%3A0x63ae3d1b2b05310f!2zzpzOtc-Dzr_Os861zq_Pic69IDMwMCwgzqfOv867zrHPgc6zz4zPgiAxNTUgNjI!5e0!3m2!1sel!2sgr!4v1682609464291!5m2!1sel!2sgr"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </main>
+    </div>
+    
+    <footer>
+        <h2>Follow New Listings and Open Houses</h2>
+        <p>Sign up with your email address to receive news and updates.</p>
+        <form action="">
+            <input type="email" placeholder="Email address" value = "">
+            <input type="submit" value="Sign up">
+        </form>
+    </footer>
+</body>
+</html>
