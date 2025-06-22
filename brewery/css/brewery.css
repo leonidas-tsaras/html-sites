@@ -1,0 +1,20 @@
+div.wrapped-image {
+    width: 100%;
+    aspect-ratio: 5/2;
+}
+div.wrapped-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section.image-text > div:nth-child(1) {
+    aspect-ratio: 1/1;
+}
+
+section.image-text > div:nth-child(1) > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
