@@ -1,0 +1,5 @@
+﻿1. Κρασιά (νέο ενότητα, ροζε)
+2. Επικοινωνία (svg icons + link)
+3. bgimage (new image)
+4. gallery (columns 3 -> 2 -> 1)
+
