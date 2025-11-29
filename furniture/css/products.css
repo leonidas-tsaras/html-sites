@@ -1,0 +1,19 @@
+@media (width < 700px) {
+  section.items {
+    flex-direction: column;
+  }
+
+  section.items figure {
+    width: 100%;
+  }
+}
+
+/* @media (width < 700px) {
+  section.items {
+    display: block;
+  }
+
+  section.items figure {
+    width: 100%;
+  }
+} */

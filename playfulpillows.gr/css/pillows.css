@@ -1,0 +1,34 @@
+
+div.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+div.categories > figure {
+    width: 48%;
+    cursor: pointer;
+}
+
+div.categories > figure > img {
+    width: 100%;
+}
+
+div.categories > figure > figcaption {
+    text-align: center;
+    line-height: 150%;
+}
+
+div.categories > figure > figcaption {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-decoration-color: var(--primaryColor);
+}
+
+@media screen and (width < 800px) {
+    div.categories > figure {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}

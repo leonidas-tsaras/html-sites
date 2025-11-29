@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  --primary: brown;
+  --headingFont: 'Trebuchet MS';
+  --textColor: rgb(100, 100, 100);
+  color: var(--textColor);
+  font-family: 'Franklin Gothic Medium';
+  font-size: 16px;
+}
+
+div.wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+
+  /* height: 500px; */
+}
+
+div.wrapper header {
+  /*   position: fixed;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto; */
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.wrapper header nav#logo a img {
+  height: 88px;
+}
+
+div.wrapper header nav#main-menu a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: var(--textColor);
+}
+
+div.wrapper header nav#main-menu a:hover {
+  color: var(--primary);
+  /* border-bottom: solid thin var(--primary); */
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+div.wrapper header nav#burger-icon {
+  font-size: 3rem;
+  color: var(--primary);
+  display: none;
+  cursor: pointer;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headingFont);
+  color: #393939;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: normal;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  line-height: 1.7rem;
+  color: var(--textColor);
+}
+
+p.description {
+  text-align: center;
+}
+
+main {
+  margin: 1.5rem 0;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section.items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+section.items figure {
+  width: 48%;
+  margin-top: 3rem;
+}
+
+figure.card img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+
+figure.card figcaption h2 {
+  font-weight: normal;
+  margin: 1rem 0 0.5rem 0;
+}
+
+figure.card figcaption h3 {
+  font-weight: normal;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+div.front {
+  width: 100%;
+  aspect-ratio: 3/1;
+  background-image: url("../images/front.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+div.wrapper header nav#main-menu a.active {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  padding: 1.5rem 0;
+}
+
+footer div.wrapper {
+  display: flex;
+  gap: 2%;
+}
+
+footer div.wrapper div {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+footer div.wrapper div:nth-child(1) {
+  text-align: center;
+}
+
+footer div.wrapper div:nth-child(1) img {
+  width: 30%;
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+
+footer div.wrapper div:nth-child(2) {
+  column-count: 2;
+  column-fill: balance;
+}
+
+footer div.wrapper div:nth-child(2) a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--textColor);
+  margin-bottom: 1rem;
+  transition: all 0.5s;
+}
+
+footer div.wrapper div:nth-child(2) a:hover {
+  color: var(--primary);
+  margin-left: 0.5rem;
+}
+
+footer form.form-container {
+  border: solid thin rgb(196, 196, 196);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+footer form.form-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+footer form.form-container input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem;
+  border: solid thin lightgray;
+  color: var(--primary);
+}
+
+footer form.form-container input:focus {
+  outline: solid thin var(--primary);
+}
+
+footer form.form-container input::placeholder {
+  color: rgba(165, 42, 42, 0.4);
+}
+
+footer form.form-container input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+/* @media (width <=1400px) {
+  main {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+} */
+
+@media (width <=1400px) {
+  div.wrapper {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+}
+
+@media (width < 1100px) {
+  footer div.wrapper {
+    flex-wrap: wrap;
+  }
+
+  footer div.wrapper div:nth-child(2) {
+    width: 49%;
+  }
+
+  footer div.wrapper div:nth-child(3) {
+    width: 49%;
+  }
+}
+
+@media (width < 780px) {
+  footer div.wrapper div:nth-child(2) {
+    width: 100%;
+  }
+
+  footer div.wrapper div:nth-child(3) {
+    width: 100%;
+  }
+}
+
+
+@media (width < 700px) {
+  div.wrapper header nav#main-menu {
+    display: none;
+  }
+
+  div.wrapper header nav#burger-icon {
+    display: block;
+  }
+}
