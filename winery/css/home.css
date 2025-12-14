@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .shade {
 	position: fixed;
 	left: 0px;
@@ -70,6 +71,64 @@ section.middle-section > div.red-wine img {
 	width: 100%;
 	max-width: 300px;
 	float: left;
+=======
+
+section.top-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section.top-section > h2 {
+    text-align: center;
+    color: var(--primaryColor);
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+section.top-section > p {
+    text-align: center;
+}
+
+section.top-section > div.cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+section.top-section > div.cards > figure {
+    width: 31%;
+}
+
+section.top-section > div.cards > figure > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+section.top-section > div.cards > figure > figcaption > h4 {
+    margin-top: 1rem;
+}
+
+section.middle-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section.middle-section > h2 {
+    text-align: center;
+    color: var(--primaryColor);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+section.middle-section > div.red-wine img {
+    width: 100%;
+    max-width: 300px;
+    float: left;
+>>>>>>> 37d826ccf2f20c7a2d1dbc38930b76fcc24f9060
 }
 
 /* section.middle-section > div.red-wine {
@@ -81,6 +140,11 @@ section.middle-section > div.red-wine img {
     width: 100%;
 } */
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 37d826ccf2f20c7a2d1dbc38930b76fcc24f9060
 /* section.middle-section > div.red-wine {
     display: flex;
     justify-content: space-between;
@@ -97,6 +161,7 @@ section.middle-section > div.red-wine > article {
 } */
 
 section.bottom-section {
+<<<<<<< HEAD
 	width: 100%;
 	margin-top: 3rem;
 	aspect-ratio: 11/2;
@@ -124,6 +189,35 @@ section.bottom-section {
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
+=======
+    width: 100%;
+    margin-top: 3rem;
+    aspect-ratio: 11/2;
+    background-image: url("../images/wines.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+section.bottom-section h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+section.bottom-section a {
+    color: white;
+    border: solid thin white;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+section.bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+>>>>>>> 37d826ccf2f20c7a2d1dbc38930b76fcc24f9060
 }
 
 /* @media (width < 800px) {
@@ -133,6 +227,7 @@ section.bottom-section {
 } */
 
 @media (width < 700px) {
+<<<<<<< HEAD
 	section.top-section > div.cards {
 		display: block;
 	}
@@ -148,9 +243,31 @@ section.bottom-section {
 		max-width: none;
 	}
 }
+=======
+    section.top-section > div.cards {
+        display: block;
+    }
+    
+    section.top-section > div.cards > figure {
+        width: 100%;
+    }
+}
+
+@media (width < 500px) {
+    section.middle-section > div.red-wine img {
+        float:none;
+        max-width: none;
+
+    }
+} 
+>>>>>>> 37d826ccf2f20c7a2d1dbc38930b76fcc24f9060
 
 /* @media (width < 500px) {
     section.middle-section > div.red-wine {
         column-count: 1;
     }
+<<<<<<< HEAD
 } */
+=======
+} */
+>>>>>>> 37d826ccf2f20c7a2d1dbc38930b76fcc24f9060

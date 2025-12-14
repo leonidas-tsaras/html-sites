@@ -1,0 +1,56 @@
+section#top-section {
+    width:100%;
+    background-image: url(../images/home-a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 5/2;
+}
+
+div#home-text {
+    margin-top: 2rem;
+}
+
+div#home-text > h1 {
+    font-size: 64px;
+    color:white;
+    margin-bottom: 3rem;
+}
+
+div#home-text > h2 {
+    font-size: 64px;
+    color:var(--primaryColor);
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+div#home-text > h3 {
+    font-size: 18px;
+    color: white;
+}
+
+/* overriding */
+header > nav#burger-menu {
+    color: white;
+}
+
+@media screen and (width < 870px) {
+
+    div#home-text {
+        margin-top: 1rem;
+    }
+    
+    div#home-text > h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    div#home-text > h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    div#home-text > h3 {
+        font-size: 1rem;
+    }
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
 	margin: 0px;
 	padding: 0px;
@@ -276,3 +277,266 @@ footer div:nth-child(2) a:hover {
 		width: 100%;
 	}
 }
+=======
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  --maxWidth: 1400px;
+  --primaryColor: #7d2f2f;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  color: rgb(126, 126, 126);
+  font-size: 16px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 1.7rem;
+    margin-bottom: 1.2rem;
+}
+
+a.active {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px;
+}
+
+a#scroller {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+    background-color: var(--primaryColor);
+    padding: 0.3rem 1rem;
+    border-radius: 50%;
+}
+
+div#front {
+    width:100%;
+    aspect-ratio: 1920/460;
+    background-image: url("../images/front.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top: solid thin white;
+}
+
+div#front header {
+    width: 100%;
+    max-width: var(--maxWidth);
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(255, 208, 208, 0.3); */
+}
+
+div#front header nav#logo a img {
+    height: 120px;
+}
+
+div#front header nav#main-menu a {
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-shadow: 3px 3px 3px rgb(87, 87, 87);
+    font-size: 1.1rem;
+}
+
+div#front header nav#main-menu a:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px;
+}
+
+div#front header nav#burger-icon {
+    display: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
+div#front h1 {
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    text-shadow: 3px 3px 3px gray;
+}
+
+div#front h3 {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+form.form-container {
+    width: 100%;
+    border: solid thin rgb(201, 201, 201);
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    form.form-container h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primaryColor);
+    }
+    
+    form.form-container input {
+    font-family:'Lucida Sans Unicode', sans-serif;
+    font-size: 16px;
+    border: solid thin lightgray;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    color: var(--primaryColor);
+    background-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    form.form-container input:focus {
+    outline: solid thin var(--primaryColor);
+    background-color: rgba(165, 42, 42, 0.2);
+    }
+    
+    form.form-container input::placeholder {
+    color: rgba(165, 42, 42, 0.3);
+    }
+    
+    form.form-container input[type="submit"] {
+    background-color: var(--primaryColor);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    }
+    
+    form.form-container input[type="submit"]:hover {
+    color:gray;
+    }
+    
+    footer {
+        display: flex;
+        gap: 2%;
+        width: 100%;
+        max-width: 1400px;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    
+    footer div {
+        width: 100%;
+    }
+    
+    footer div:nth-child(1) {
+        text-align: center;
+    }
+    
+    footer div:nth-child(1) img {
+        width: 130px;
+        filter: invert(100%);
+    }
+    
+    footer div:nth-child(2) {
+        column-count: 2;
+    }
+    
+    footer div:nth-child(2) a {
+        color: var(--primaryColor);
+        display: block;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        transition: all 0.5s;
+    }
+    
+    footer div:nth-child(2) a:hover {
+        margin-left: 0.4rem;
+    }
+    
+
+
+@media (width < 1400px) {
+    div#front h1 {
+        margin-top: 1.5rem;
+    }
+
+    main {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+@media (width < 1200px) {
+    div#front h1 {
+        margin-top: 0.5rem;
+    }
+
+    div#front h3 {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (width < 900px) {
+    footer {
+        flex-wrap: wrap;
+    }
+
+    footer div:nth-child(1) {
+        width: 49%;
+    }
+
+    footer div:nth-child(2) {
+        width: 49%;
+    }
+}
+
+@media (width < 800px) {
+    div#front header nav#main-menu {
+        display: none;
+    }
+
+    div#front header nav#burger-icon {
+        display: block;
+    }
+}
+
+@media (width < 700px) {
+    div#front h1 {
+        font-size: 1.5rem;
+    }
+    div#front h3 {
+        font-size: 1.1rem;
+    }
+
+    footer div:nth-child(1) {
+        width: 100%;
+    }
+
+    footer div:nth-child(2) {
+        width: 100%;
+    }
+}
+>>>>>>> 37d826ccf2f20c7a2d1dbc38930b76fcc24f9060

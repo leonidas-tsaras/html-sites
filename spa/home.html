@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript">
+        window.addEventListener("load", function() {
+            let icon = document.querySelector("header > nav#icon-menu");
+            if(icon) {
+                let nav = document.querySelector("header > nav#dropdown-menu");
+                icon.addEventListener("click", function() {
+                    nav.classList.toggle("nodisplay");
+                });			
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id = "wrapper">
+        <header>
+            <div id = "logo">
+                <a href="#home">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </div>
+            <nav id = "top-menu">
+                <a href="#home">Αρχική</a>
+                <a href="#about">Ποιοί είμαστε</a>
+                <a href="#services">Υπηρεσίες</a>
+                <a href="#projects">Έργα</a>
+                <a href="#contact">Επικοινωνία</a>
+            </nav>
+            <nav id = "icon-menu">☰</nav>
+            <nav id = "dropdown-menu" class = "nodisplay">
+                <a href="#home">Αρχική</a>
+                <a href="#about">Ποιοί είμαστε</a>
+                <a href="#services">Υπηρεσίες</a>
+                <a href="#projects">Έργα</a>
+                <a href="#contact">Επικοινωνία</a>
+            </nav>
+        </header>
+
+        <main id = "home">
+            <h1>Home page</h1>
+            <p class = "col321">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo odit vel natus! Explicabo blanditiis hic asperiores quaerat ratione vitae architecto commodi itaque iusto doloribus recusandae sit deserunt ipsa, exercitationem voluptatum culpa natus autem? Praesentium at labore debitis quibusdam eligendi? Aliquam voluptatem labore, maiores, obcaecati quisquam nemo, odio fugit minima necessitatibus alias voluptatum sint numquam commodi sequi quaerat? Illo beatae aperiam ipsam nisi! Officia eius repudiandae porro autem accusantium doloribus nobis recusandae, quam delectus magnam iste aliquid temporibus voluptatibus. Provident ducimus obcaecati repellendus reiciendis quod aperiam animi voluptas placeat repudiandae. Culpa, doloribus temporibus ab itaque soluta consequuntur voluptate at nostrum officiis ipsa ipsam assumenda pariatur impedit! Odit voluptas libero illum, a fugiat nostrum voluptatibus nisi eum quia minus, sequi deserunt rem officia doloribus fuga. Beatae sapiente dolores rerum illo distinctio. Labore asperiores minus libero harum consequatur molestias, molestiae sed quod autem qui debitis ratione tenetur odio soluta facilis, illo adipisci nam rem iste! Beatae sunt eaque ipsam temporibus delectus eos sapiente dolor, earum dicta distinctio vel culpa animi provident, aspernatur nam amet expedita laudantium aliquam ut perspiciatis rem consequatur nihil vero! Ex delectus expedita ad rerum animi aliquam voluptatem dolores aperiam fugit. Sit voluptas, ipsum minus voluptatem voluptate perspiciatis iste incidunt deserunt et molestiae accusamus quibusdam rem nesciunt officia! Esse praesentium repellendus, iusto nisi beatae rerum soluta at inventore a corporis animi, ipsa unde quae possimus nobis aliquam, temporibus dicta? Nostrum, ratione eius ipsa eveniet sequi, alias optio tempore labore nobis, distinctio quae at atque! Quas facere perspiciatis sequi modi. Fugiat temporibus illo dolore ut nobis incidunt harum. Sint nisi beatae nesciunt totam tempore, rerum odio. Quam aspernatur nobis qui adipisci reprehenderit excepturi numquam in sit, voluptate quos. Explicabo vel molestias doloremque ipsum corporis obcaecati magnam voluptatibus architecto saepe? Recusandae iure delectus libero sed, provident neque inventore doloremque ad perspiciatis commodi?</p>
+        </main>
+
+        <main id = "about">
+            <h1>About page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repudiandae consequatur facilis est laboriosam, nam quam amet enim quas consequuntur ipsam reiciendis voluptates, error sapiente nulla recusandae adipisci eius esse earum. Minima facere odio harum error, quis recusandae, eveniet sed non doloribus, nam asperiores! Exercitationem neque vitae culpa eaque quam autem, molestiae delectus sint consequuntur dolores at aspernatur est possimus voluptates perferendis amet! Veniam sequi, iure, aspernatur, veritatis autem modi deleniti mollitia alias laudantium corporis culpa! Quidem corporis eos quae alias ullam. Ad, voluptatum suscipit! Officiis voluptatibus quod esse consectetur impedit sequi tenetur minima explicabo atque fugit id et temporibus quos, veniam, accusantium odit est nesciunt tempore incidunt nostrum laborum aut officia. Vel iste harum aspernatur? Error sit officia voluptas maxime maiores velit, omnis sint. Magnam veniam pariatur minima id est a odio ab voluptatum illum voluptas sint nihil repellat itaque, reiciendis rerum natus, sed, obcaecati vero reprehenderit sequi fuga sapiente! Maxime porro iste debitis consequuntur quam sunt natus laborum unde dolor, delectus fugit non ducimus facere ut ad voluptate possimus modi et suscipit quibusdam minus voluptates! Sint, laudantium assumenda.</p>
+        </main>
+
+        <main id = "services">
+            <h1>Services page</h1>
+            <p class = "col321">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea tenetur illum doloremque similique dolorem, exercitationem labore sint suscipit voluptate quam ex magni, sit laudantium veritatis voluptatibus atque porro explicabo ipsa eaque reiciendis! Saepe deserunt molestiae, voluptatum omnis cum, corrupti nihil ea rerum, suscipit accusantium dolores! Ipsa dolorem, hic minima voluptatibus enim ipsum cupiditate inventore a beatae placeat quidem fuga quod, in est accusamus doloribus. Assumenda reiciendis aperiam saepe vero libero. Alias placeat perferendis, dolorum nulla aperiam perspiciatis reprehenderit quidem beatae corporis dolores sequi reiciendis fuga deserunt aspernatur facere nisi dolore, nam quasi architecto, iste accusantium quos magni minus earum! Quasi alias dolores illo amet illum dolor expedita soluta, qui vero rerum maxime obcaecati veniam quisquam pariatur modi facilis, laboriosam non et? Quasi veritatis natus libero. Doloribus perferendis modi maiores explicabo nulla quasi aliquid libero nobis dolore, voluptate repellendus non sequi quos beatae distinctio id dolores quidem tempora temporibus vero corporis repudiandae eos ratione veniam? Exercitationem, magni veritatis! Laudantium officia possimus et, impedit quos excepturi accusamus sed quia nemo laborum! Quis eius, libero eligendi dolorum at, deleniti ratione odit excepturi itaque, ex id incidunt dicta optio saepe cum distinctio tempora delectus sapiente omnis earum corporis voluptatem veritatis? Ducimus iste dolor, cumque beatae fugiat esse tenetur accusantium cum voluptatum adipisci aliquid ab assumenda repellendus aliquam. Voluptate, esse doloremque reiciendis distinctio necessitatibus voluptatem vel reprehenderit corrupti possimus consectetur nisi facere fugiat quaerat itaque, veniam quibusdam earum illum similique natus cum iusto laboriosam ex minima! Iusto cum voluptate quos optio ducimus autem dolorum, at sed officia obcaecati nobis assumenda, qui eveniet delectus quibusdam vitae ut totam a maiores commodi, non blanditiis. Quam ipsam ipsa, vitae nam aliquam rem harum amet! Cum, sint dolorum? Quia, saepe. Repellat consequatur aliquam unde enim culpa minus ex dignissimos nam? Ut, vero saepe! Voluptatibus enim assumenda saepe accusantium placeat.</p>
+        </main>
+
+        <main id="projects">
+            <h1>Projects page</h1>
+            <p class = "col321">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo culpa est nemo cupiditate at corporis voluptas eum recusandae repellendus amet ad ab ducimus expedita itaque, harum maxime vitae eius unde? Eaque magnam esse dicta, quod obcaecati saepe sint. Hic blanditiis aliquid sequi aut numquam animi voluptatem repellat! Facere praesentium temporibus explicabo sint quasi, maiores sunt at quisquam, magnam obcaecati laborum sequi! Esse placeat voluptatibus delectus provident consequuntur hic, fuga, officia enim eius mollitia aspernatur exercitationem dignissimos tenetur blanditiis. Mollitia eveniet neque autem saepe temporibus atque iure, odio nam ut, vitae consequuntur quasi eos sint dignissimos dolor tempora accusamus tenetur excepturi dolorem molestias rem. Illo eveniet laboriosam modi recusandae libero mollitia? Tempora rerum cumque explicabo dolor libero. Nam doloremque debitis temporibus optio unde autem magni sequi numquam quam nostrum reiciendis repellendus maxime at consequatur voluptatem soluta eaque dolor quod pariatur qui dolorum, veniam inventore esse repellat? Corrupti minima molestias aspernatur quas eius ducimus temporibus quisquam alias, saepe a, quos ullam quaerat nostrum corporis, ipsam consectetur recusandae. Rerum at minus unde facilis nihil, dolores veniam harum magni aut enim iure maxime dolorem modi. Assumenda, nostrum? Atque dignissimos, quam itaque eveniet reprehenderit similique minus cupiditate nulla hic, maxime, vitae commodi ducimus tenetur!</p>
+        </main>
+
+        <main id="contact">
+            <h1>Contact page</h1>
+            <p class = "col21">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam debitis aut officiis cumque aliquid cum libero animi iure magni assumenda distinctio fugiat dolores delectus suscipit sunt error est dignissimos deserunt numquam maxime, neque nobis! Est saepe similique, assumenda maiores laboriosam repellendus placeat fugiat exercitationem rerum consequatur accusamus? Voluptatem sapiente pariatur, accusamus nostrum harum reprehenderit corporis omnis tempora magni dolor tenetur laboriosam! Placeat, ducimus, aliquid, sapiente esse excepturi necessitatibus amet porro commodi dolore eveniet dolores possimus reiciendis omnis sunt eos mollitia. Sunt incidunt animi illum velit vitae explicabo sed laudantium aut voluptates, facere debitis iste. Eius obcaecati impedit error earum quis nisi velit, aliquam exercitationem nesciunt itaque qui, ipsum asperiores assumenda iusto corrupti rem dolor blanditiis maxime quo temporibus sint quaerat. Sapiente neque accusantium saepe voluptas, impedit numquam ab molestiae. Impedit accusantium facilis veritatis nihil ducimus illo eaque. Magni dignissimos voluptate similique, totam reiciendis nemo? Rem atque mollitia dolore maxime nemo ullam perspiciatis illum libero eum vitae, distinctio voluptates laudantium obcaecati rerum voluptas. Sit fugit ut alias tempora possimus voluptates minima, odit iure? Cumque obcaecati odit iusto doloribus asperiores reiciendis deleniti hic quod illum sit! Animi modi maiores nobis in dolorum corrupti, minus nemo amet inventore assumenda at sint, adipisci molestias laboriosam quidem distinctio veniam officia? Minus vel perspiciatis expedita quos earum aliquam quae provident corporis dignissimos sed. Iure soluta, laudantium amet harum saepe, inventore quae cumque quidem rem maiores perspiciatis, iste doloremque! Excepturi corporis modi tenetur voluptate reprehenderit perspiciatis expedita nemo velit libero iusto odio inventore blanditiis aliquam, quo magnam.</p>
+        </main>
+
+        <footer>
+            <section>
+                <!-- <img src="images/logo.svg" alt=""> -->
+                <h3>Περιγραφή</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </section>
+            <section>
+                <h3>Menu</h3>
+                <p class = "col21">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Cookies</a>
+                </p>
+            </section>
+            <section>
+                <h3>Newsletter</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor illum.</p>
+                <form>
+                    <input type="email" value = "" placeholder = "e-mail">
+                    <input type="submit" value="Αποστολή">
+                </form>
+            </section>
+        </footer>
+    </div>
+
+
+    <a id = "scroll-arrow" href = "#wrapper">^</a>
+</body>
+</html>
