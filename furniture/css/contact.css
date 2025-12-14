@@ -1,0 +1,117 @@
+    div.front {
+      aspect-ratio: 5/1;
+    }
+
+    section.contact-items {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    section.contact-items>div {
+      width: 48%;
+    }
+
+    section.contact-items>div>p.key {
+      font-size: 1.1rem;
+    }
+
+    section.contact-items>div>p.value {
+      font-size: 1.2rem;
+
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    section.contact-items>div>p.value>a {
+      color: black;
+    }
+
+    section.contact-items>div>p.value>a>img {
+      height: 20px;
+    }
+
+    section.contact-items>form {
+      width: 48%;
+    }
+
+    form.form-container {
+      border: solid thin rgb(196, 196, 196);
+      /*             width: 100%;
+            max-width: 400px; */
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 4px 4px 4px rgb(190, 190, 190);
+    }
+
+    form.form-container h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    form.form-container input {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem;
+      border: solid thin lightgray;
+      color: var(--primary);
+    }
+
+    form.form-container input:focus {
+      outline: solid thin var(--primary);
+    }
+
+    form.form-container input::placeholder {
+      color: rgba(165, 42, 42, 0.4);
+    }
+
+    form.form-container textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem;
+      border: solid thin lightgray;
+      font-family: 'Franklin Gothic Medium';
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--primary);
+    }
+
+    form.form-container textarea:focus {
+      outline: solid thin var(--primary);
+    }
+
+    form.form-container textarea::placeholder {
+      color: rgba(165, 42, 42, 0.4);
+    }
+
+    form.form-container input[type="submit"] {
+      background-color: var(--primary);
+      color: white;
+      font-weight: bold;
+      border: none;
+      margin-top: 1.5rem;
+    }
+
+    iframe {
+      width: 100%;
+      aspect-ratio: 4/1;
+    }
+
+    @media (width < 800px) {
+      section.contact-items {
+        display: block;
+      }
+
+      section.contact-items>div {
+        width: 100%;
+      }
+
+      section.contact-items>form {
+        width: 100%;
+      }
+
+    }

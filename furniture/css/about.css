@@ -1,0 +1,16 @@
+div.front {
+  aspect-ratio: 5/1;
+}
+
+main#about p.about {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin: 3rem 0;
+}
+
+main#about img#signature {
+  width: 200px;
+  display: block;
+  margin: auto;
+}

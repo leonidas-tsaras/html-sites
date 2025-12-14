@@ -1,0 +1,116 @@
+section.contact {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section.contact > h2 {
+    text-align: center;
+    color: var(--primaryColor);
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+div.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.contact-container form.form-container {
+    width: 60%;
+} 
+
+div.contact-container div.contact-items {
+    width: 35%;
+}
+
+form.form-container {
+width: 100%;
+border: solid thin rgb(201, 201, 201);
+padding: 1.3rem;
+border-radius: 0.5rem;
+box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.5);
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+form.form-container h3 {
+text-align: center;
+margin-bottom: 1.5rem;
+color: var(--primaryColor);
+}
+
+form.form-container input {
+font-family:'Lucida Sans Unicode', sans-serif;
+font-size: 16px;
+border: solid thin lightgray;
+display: block;
+width: 100%;
+margin-bottom: 0.5rem;
+padding: 0.3rem;
+color: var(--primaryColor);
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+form.form-container input:focus {
+outline: solid thin var(--primaryColor);
+background-color: rgba(165, 42, 42, 0.2);
+}
+
+form.form-container input::placeholder {
+color: rgba(165, 42, 42, 0.3);
+}
+
+
+form.form-container textarea {
+font-family:'Lucida Sans Unicode', sans-serif;
+font-size: 16px;
+border: solid thin lightgray;
+display: block;
+width: 100%;
+margin-bottom: 1rem;
+padding: 0.3rem;
+color: var(--primaryColor);
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+form.form-container textarea:focus {
+outline: solid thin var(--primaryColor);
+background-color: rgba(165, 42, 42, 0.2);
+}
+
+form.form-container textarea::placeholder {
+color: rgba(165, 42, 42, 0.3);
+}
+
+form.form-container input[type="submit"] {
+background-color: var(--primaryColor);
+color: white;
+font-weight: bold;
+border: none;
+cursor: pointer;
+transition: all 0.5s;
+}
+
+form.form-container input[type="submit"]:hover {
+color:gray;
+}
+
+iframe {
+width: 100%;
+aspect-ratio: 4/1;
+margin-top: 2rem;
+}
+
+@media (width < 700px) {
+    div.contact-container {
+        display: block;
+    }
+    
+    div.contact-container form.form-container {
+        width: 100%;
+    } 
+    
+    div.contact-container div.contact-items {
+        width: 100%;
+    }
+}

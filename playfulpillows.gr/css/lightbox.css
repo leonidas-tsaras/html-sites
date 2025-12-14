@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+img.start-images {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+div.shade {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(216, 112, 147, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.shade > img.big-image {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}

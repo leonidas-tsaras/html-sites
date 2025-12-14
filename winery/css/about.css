@@ -1,0 +1,42 @@
+section.about-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.about-section img {
+    width: 48%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.about-section article {
+    width: 48%;
+}
+
+section.about-section article h2 {
+    color: var(--primaryColor);
+}
+
+section.about-section article h3 {
+    color: rgb(177, 177, 177);
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+@media (width < 700px) {
+    section.about-section {
+        display: block;
+    }
+    
+    section.about-section img {
+        width: 100%;
+    }
+    
+    section.about-section article {
+        width: 100%;
+    }
+}

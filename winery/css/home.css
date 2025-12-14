@@ -1,0 +1,156 @@
+.shade {
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color: var(--transparentPrimaryColor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.shade img {
+	height: 90%;
+}
+
+section.top-section {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+}
+
+section.top-section > h2 {
+	text-align: center;
+	color: var(--primaryColor);
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+}
+
+section.top-section > p {
+	text-align: center;
+}
+
+section.top-section > div.cards {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 2rem 0;
+}
+
+section.top-section > div.cards > figure {
+	width: 31%;
+}
+
+section.top-section > div.cards > figure > img {
+	width: 100%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+section.top-section > div.cards > figure > figcaption > h4 {
+	margin-top: 1rem;
+}
+
+section.middle-section {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+}
+
+section.middle-section > h2 {
+	text-align: center;
+	color: var(--primaryColor);
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+section.middle-section > div.red-wine img {
+	width: 100%;
+	max-width: 300px;
+	float: left;
+}
+
+/* section.middle-section > div.red-wine {
+    column-count: 3;
+    column-fill: balance;
+}
+
+section.middle-section > div.red-wine img {
+    width: 100%;
+} */
+
+/* section.middle-section > div.red-wine {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.middle-section > div.red-wine > img {
+    width: 30%;
+    min-width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+section.middle-section > div.red-wine > article {
+    width: 65%;
+} */
+
+section.bottom-section {
+	width: 100%;
+	margin-top: 3rem;
+	aspect-ratio: 11/2;
+	background-image: url("../images/wines.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+section.bottom-section h2 {
+	color: white;
+	font-size: 3rem;
+}
+
+section.bottom-section a {
+	color: white;
+	border: solid thin white;
+	padding: 1rem 2rem;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+section.bottom-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+/* @media (width < 800px) {
+    section.middle-section > div.red-wine {
+        column-count: 2;
+    }
+} */
+
+@media (width < 700px) {
+	section.top-section > div.cards {
+		display: block;
+	}
+
+	section.top-section > div.cards > figure {
+		width: 100%;
+	}
+}
+
+@media (width < 500px) {
+	section.middle-section > div.red-wine img {
+		float: none;
+		max-width: none;
+	}
+}
+
+/* @media (width < 500px) {
+    section.middle-section > div.red-wine {
+        column-count: 1;
+    }
+} */
