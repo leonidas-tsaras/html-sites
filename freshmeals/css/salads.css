@@ -1,0 +1,44 @@
+
+main#salads > p {
+    column-count: 2;
+    column-gap: 1.5rem;
+    column-rule: dashed lightgray thin;
+    column-fill: balance;
+    margin-bottom: 1.5rem;
+}
+
+.four-cols {
+    margin-bottom: 48px;
+}
+
+.four-cols div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.four-cols div figure {
+    width: 23.5%;
+}
+
+.four-cols p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (width < 800px) {
+    .four-cols div figure {
+        width: 49%;
+        margin-bottom: 1.5rem;
+    }
+
+    main#salads > p {
+        columns: unset;
+    }
+}
+
+@media (width < 560px) {
+    .four-cols div figure {
+        width: 100%;
+    }
+}
