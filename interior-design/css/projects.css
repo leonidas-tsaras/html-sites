@@ -1,0 +1,30 @@
+section.gallery {
+    column-count: 4;
+    column-gap: 0.5rem;
+    column-fill: balance;
+}
+
+section.gallery img {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+@media (width < 900px) {
+    section.gallery {
+        column-count: 3;
+    }
+}
+
+@media (width < 700px) {
+    section.gallery {
+        column-count: 2;
+    }
+}
+
+@media (width < 480px) {
+    section.gallery {
+        /* column-count: 1; */
+        columns: unset;
+    }
+}

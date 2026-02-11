@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
+<!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     -->
+    
+    <title>Interior Design</title>
+
+        <style>
+/* FAQ card */
+    details {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      background: #fafafa;
+      overflow: hidden;
+
+      /* magic for smooth animation */
+      display: grid;
+      grid-template-rows: auto 0fr;
+      transition: grid-template-rows 0.35s ease;
+    }
+
+    details[open] {
+      grid-template-rows: auto 1fr;
+    }
+
+    summary {
+      padding: 14px 16px;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    /* plus/minus icon */
+    summary::after {
+      content: "+";
+      float: right;
+      transition: transform 0.2s ease;
+    }
+
+    details[open] summary::after {
+      content: "–";
+    }
+
+    /* animated content wrapper */
+    .content {
+      overflow: hidden;
+      padding: 0 16px;
+    }
+
+    .content p {
+      margin: 0 0 16px;
+    }
+        </style>
+</head>
+
+<body>
+    <header>
+        <div class = "wrapper">
+            <nav id = "logo-nav">
+                <a href="home.html">Interior Design</a>
+            </nav>
+            <nav id = "top-nav">
+                <a href="home.html">Αρχική</a>
+                <a href="about.html">Σχετικά με εμάς</a>
+                <a href="projects.html">Τα έργα μας</a>
+                <a class = "active" href="faq.html">Συχνές ερωτήσεις</a>
+                <a href="contact.html">Επικοινωνία</a>
+            </nav>
+            <nav id = "icon-nav">☰</nav>
+        </div>
+    </header>
+    <div class="wrapper">
+
+        <main>
+            <section class = "top-section">
+                <h1>Συχνές ερωτήσεις</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illo perspiciatis saepe id, recusandae minima corrupti quasi beatae consequuntur ea earum laborum quibusdam odio quaerat. Ad saepe tempora rerum placeat asperiores non fugiat provident.</p>
+            </section>
+
+            <section class = "faq">
+  <details>
+    <summary>What does an interior designer do?</summary>
+    <div class="content">
+      <p>An interior designer helps plan, design, and style your space so it’s both functional and beautiful. We create layouts, select finishes and furniture, manage sourcing, and bring everything together to match your lifestyle and vision.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>When should I hire an interior designer?</summary>
+    <div class="content">
+      <p>The earlier, the better! Hiring a designer at the start of your project saves time, money, and stress by preventing costly mistakes and ensuring a cohesive design from day one.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Do you work with my existing furniture and décor?</summary>
+    <div class="content">
+      <p>Absolutely. We can incorporate pieces you love and design around them. Our goal is to blend new and existing elements seamlessly.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How much does interior design cost?</summary>
+    <div class="content">
+      <p>Costs vary depending on the scope of the project, the size of the space, and the services needed. We offer different packages and provide clear pricing upfront after an initial consultation.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How long does a typical project take?</summary>
+    <div class="content">
+      <p>Timelines depend on the project size. A single room may take a few weeks, while full-home designs or renovations can take several months. We provide a detailed timeline before starting.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What is your design process?</summary>
+    <div class="content">
+      <p>Our process typically includes consultation, concept development, space planning, material selection, procurement, and installation. We guide you through each step to make the experience smooth and enjoyable.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Can you work within my budget?</summary>
+    <div class="content">
+      <p>Yes. We design with your budget in mind and prioritize spending where it matters most. We’ll present options that balance style, quality, and cost.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Do I need to have a clear style before we start?</summary>
+    <div class="content">
+      <p>Not at all! Part of our job is helping you discover your style. We use mood boards, inspiration images, and conversations to define a look you’ll love.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Do you handle renovations or just decorating?</summary>
+    <div class="content">
+      <p>We do both. From simple styling updates to full renovations, we coordinate with contractors and suppliers to manage all aspects of the project.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I get started?</summary>
+    <div class="content">
+      <p>Simply reach out to schedule a consultation. We’ll discuss your goals, space, timeline, and budget — and then create a plan to bring your vision to life.</p>
+    </div>
+  </details>
+            </section>
+
+        </main>
+
+    </div>
+
+<footer>
+    <div class="wrapper">
+      <div>
+        <!-- <a href="#"><img src="./images/logo.png" alt="logo"></a> -->
+         <h3>Interior Design</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quas sunt ipsum reiciendis quasi omnis qui
+          voluptatem perferendis esse temporibus!</p>
+        <p>info@demoteam.com<br>154-175-4301</p>
+      </div>
+      <div>
+        <h3>Πληροφορίες</h3>
+        <nav>
+            <a href="#">Πολιτική απορρήτου</a>
+            <a href="#">Όροι και Προϋποθέσεις</a>
+            <a href="#">Τρόποι πληρωμής</a>
+            <a href="#">Σχετικά με εμάς</a>
+            <a href="#">Επικοινωνία</a>
+            <a href="#">Ο Λογαριασμός μου</a>
+        </nav>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+        <form id="newsletter">
+          <input type="email" value="" placeholder="e-mail">
+          <input type="submit" value="Εγγραφή">
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
