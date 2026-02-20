@@ -10,6 +10,11 @@
     width: 49%;
 }
 
+.two-cols-top div h5 {
+    margin-bottom: 0.5rem;
+
+}
+
 .two-cols-top div:nth-child(1) p {
     margin-bottom: 2rem;
 } 
@@ -24,6 +29,12 @@
     color: gray;
 }
 
+.two-cols-top div:nth-child(1) aside a {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+/* form start */
 form#contact {
     width: 100%;
 }
@@ -31,10 +42,10 @@ form#contact h2 {
     text-align: center;
 }
 form#contact p {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 form#contact > legend {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
 }
 form#contact input {
     font-family: 'Trebuchet MS', sans-serif;
@@ -81,6 +92,7 @@ form#contact input[type="submit"] {
     background-color: var(--primaryColor);
     border: none;
 }
+/* form end */
 
 iframe {
     width: 100%;
