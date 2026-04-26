@@ -1,3 +1,7 @@
+div.front {
+    aspect-ratio: 5/1;
+}
+
 @media (width < 700px) {
   section.items {
     flex-direction: column;
