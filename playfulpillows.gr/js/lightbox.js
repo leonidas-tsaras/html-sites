@@ -1,11 +1,9 @@
-window.addEventListener("load", init);
-
-function init() {
+(() => {
     const images = document.querySelectorAll("figure > img");
     for(let i = 0; i < images.length; i++) {
         images[i].addEventListener("click", () => {getLightBox(images[i])})
     }
-}
+})();
 
 let getLightBox = (element) => { // arrow functions
     let shade = document.createElement("div");

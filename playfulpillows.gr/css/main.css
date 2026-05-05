@@ -11,6 +11,7 @@ body {
     --primaryColor: #C9262D;
     --wrapperWidth: 1400px;
     --textColor: rgb(54, 54, 54);
+    --headerHeight: 110px;
     background-color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
@@ -25,13 +26,16 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    /* margin-top: 2rem; */
     padding-top: 1rem;
+    height: var(--headerHeight);
 }
 
 /* logo */
+header > nav:nth-child(1) > a {
+    height: 80%;
+}
 header > nav:nth-child(1) > a > img {
-    width: 350px;
+    height: 100%;
 }
 
 /* main-menu */
@@ -138,18 +142,13 @@ footer > div > a {
     display: block;
 }
 
+@media (width <= 1400px) {
+    .wrapper {
+        padding: 0 1rem;
+    }
+}
 
 @media screen and (width < 800px) {
-    /* main menu */
-    header > nav:nth-child(2) {
-        display: none;
-    }
-
-    /* burger menu */
-    header > nav:nth-child(3) {
-        display: block;
-    }
-
     div.image-text > div {
         width: 100%;
     }

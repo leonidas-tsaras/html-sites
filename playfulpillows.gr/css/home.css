@@ -30,6 +30,7 @@ div.products {
 
 div.products > figure {
     width: 24%;
+    cursor: pointer;
 }
 
 div.products > figure > img {

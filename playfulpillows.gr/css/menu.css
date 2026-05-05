@@ -1,0 +1,58 @@
+
+header nav#main-menu > a {
+    color: var(--textColor);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s;
+    font-size: 1.1rem;
+}
+
+header nav#main-menu > a:hover {
+    color: var(--primaryColor);
+}
+
+header nav#main-menu > a.active {
+    color: var(--primaryColor);
+    font-weight: bold;
+}
+
+header nav#burger-menu {
+    font-weight: bold;
+    font-size: 3rem;
+    display: none;
+    color: var(--primaryColor);
+    margin-right: 0.2rem;
+    cursor: pointer;
+}
+
+.block {
+    display: block;
+}
+
+@media (width < 800px) {
+	header nav#main-menu {
+		display: none;
+		background-color: rgba(255, 255, 255, 0.9);
+		box-shadow: 2px 2px 2px lightGray;
+		border: solid thin gray;
+		position: absolute;
+		width: 100%;
+		max-width: 380px;
+		right: 0.5rem;
+		top: var(--headerHeight);
+		padding: 0.5rem;
+	}
+
+	header nav#main-menu.block {
+		display: block;
+	}
+
+	header nav#main-menu a {
+		width: 100%;
+        margin-bottom: .5rem;
+	}
+
+	header nav#burger-menu {
+		display: block;
+	}
+}
