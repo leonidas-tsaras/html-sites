@@ -1,0 +1,179 @@
+header {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/1;
+    background-image: url("./../images/farm.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+header h3 {
+    text-align: center;
+    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    margin-bottom: 1rem;
+    color: var(--primaryColor);
+}
+header h1 {
+    color: white;
+    text-align: center;
+    font-size: clamp(1.8rem, 4vw, 4rem);
+}
+
+header div#headings {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 20px;
+}
+
+
+main section.logo-section {
+    text-align: center;
+    background-color: var(--bgLightGray);
+    padding: 5rem;
+    margin-top: 1rem;
+}
+
+main section.logo-section div.wrapper img {
+    display: inline-block;
+    height: 200px;
+    margin-bottom: 2rem;
+}
+
+main section.logo-section div.wrapper h3 {
+    color: var(--primaryColor);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main section.logo-section div.wrapper h1 {
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main section.logo-section div.wrapper p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 clamp(1rem, 30%, 30%);
+}
+
+main section.products-section {
+    padding: 4rem 0;
+}
+
+div.three-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.three-cards figure.product {
+    width: 30%;
+    text-align: center;
+}
+
+div.three-cards figure.product img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+div.three-cards figure.product figcaption a {
+    color: var(--primaryColor);
+    text-decoration: underline;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+div.three-cards figure.product figcaption a:hover {
+    opacity: 1;
+}
+
+
+
+section.fresh-products {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/1;
+    background-image: url("./../images/farm-field.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section.fresh-products h2 {
+    color: white;
+}
+
+section.fresh-products h3 {
+    color: var(--primaryColor);
+    font-size: 2rem;
+}
+
+section.our-farm {
+    background-color: var(--bgLightGray);
+    padding: 5rem;
+    margin-top: 1rem;
+}
+
+section.our-farm div.two-cols {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.our-farm div.two-cols div {
+    width: 47%;
+}
+
+section.our-farm div.two-cols div:nth-child(1) h2 {
+    color: black;
+}
+section.our-farm div.two-cols div:nth-child(1) h3 {
+    color: var(--primaryColor);
+}
+
+section.our-farm div.two-cols div:nth-child(2) p {
+    margin-bottom: 2rem;
+}
+
+
+@media (width < 1000px) {
+    main section.logo-section div.wrapper p {
+        padding: 0 10%;
+    }    
+}
+
+
+@media (width < 800px) {
+    div.three-cards {
+        display: block;
+    } 
+
+    div.three-cards figure.product {
+        width: 100%;
+        text-align: center;
+    }
+
+    div.three-cards figure.product img {
+        width: 60%;
+    }
+
+    section.our-farm div.two-cols {
+        display: block;
+    }
+    section.our-farm div.two-cols div {
+        width: 100%;
+    }
+
+    main section.logo-section div.wrapper p {
+        padding: 0 5%;
+    }    
+}

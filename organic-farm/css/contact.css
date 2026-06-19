@@ -1,0 +1,117 @@
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section div.form {
+            width: 35%;
+        }
+
+        section div.map {
+            width: 60%;
+        }
+
+        section div.map > p {
+            margin-bottom: 1.5rem;
+        }
+
+        section div.map > iframe {
+            width: 100%;
+            aspect-ratio: 2/1;
+            margin-bottom: 1.5rem;
+        }
+
+        section div.form form {
+            width: 100%;
+
+        }
+
+        section div.form form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        section div.form form input {
+            display: block;
+            width: 100%;
+            border: solid thin lightgray;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        section div.form form input:focus {
+            border: solid thin var(--primaryColor);
+        }
+
+        section div.form form input[type="checkbox"] {
+            display: inline-block;
+            width: fit-content;
+        }
+
+        section div.form form textarea {
+            display: block;
+            width: 100%;
+            aspect-ratio: 3/1;
+            border: solid thin lightgray;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        section div.form form textarea:focus {
+            border: solid thin var(--primaryColor);
+        }
+
+        section div.form form input[type="submit"] {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            width: fit-content;
+            cursor: pointer;
+            transition: all .5s;
+            margin-left: auto;
+        }
+        section div.form form input[type="submit"]:hover {
+            background-color: gray;
+        }
+
+        section div.map div.two-cols {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section div.map div.two-cols div {
+            width: 45%;
+        }
+
+        main {
+            background-color: var(--bgLightGray);
+            padding: 3rem 0;
+        }
+
+        @media (width < 1000px) {
+
+            section div.form {
+                width: 50%;
+            }
+
+            section div.map {
+                width: 50%;
+            }
+
+        }
+
+        @media (width < 800px) {
+            section {
+                display: block;
+            }
+
+            section div.form {
+                width: 100%;
+            }
+
+            section div.map {
+                width: 100%;
+            }
+        }

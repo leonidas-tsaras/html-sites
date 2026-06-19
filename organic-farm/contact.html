@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel = "icon" href = "./images/logo-green.png" type = "image/x-icon">
+    <title>Επικοινωνία</title>
+
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav id = "top-menu" aria-label="Κύριο μενού">
+                <div id = "logo-nav">
+                    <a href = "home.html">
+                        <img src="./images/logo-green.png">
+                    </a>
+                </div>
+                <div id = "menu-nav">
+                    <a href="home.html">Αρχική</a>
+                    <a href="about.html">Σχετικά με εμάς</a>
+                    <a href="products.html">Προϊόντα</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html">Επικοινωνία</a>
+                </div>
+                <div id = "burger-icon" role="button" aria-label="Μενού πλοήγησης" tabindex="0">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+    <div class="wrapper">
+        
+            <h1>Επικοινωνήστε μαζί μας</h1>
+
+            <section>
+                <div class = "form">
+                    <h2>Φόρμα Επικοινωνίας</h2>
+                    <form action="#" method="POST">
+                        <label for="name">Όνομα</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email">
+
+                        <h5>Επιλέξτε προϊόν</h5>
+                        <label>
+                            <input type="checkbox" name="product" value="cow-milk"> Φρέσκο αγελαδινό γάλα
+                        </label>
+                        <label>
+                            <input type="checkbox" name="product" value="sheep-cheese"> Πρόβειο τυρί
+                        </label>
+                        <label>
+                            <input type="checkbox" name="product" value="goat-cheese"> Κατσικίσιο τυρί
+                        </label>    
+                        
+                        <label for="message">Μήνυμα</label>
+                        <textarea id="message" name="message"></textarea>
+                        <input type="submit" value="Αποστολή">
+                    </form>
+                </div>
+
+                <div class = "map">
+                    <h2>Διεύθυνση</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1869.8252912798998!2d23.730368735414164!3d37.98509199192468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd3177c5093f%3A0xf067ad1d86aa4135!2zzpnOlc6aIElOVEVSR1JBUEhJQ1M!5e0!3m2!1sel!2sgr!4v1780595389126!5m2!1sel!2sgr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Χάρτης τοποθεσίας φάρμας"></iframe>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto enim eum sapiente ab. Provident aut eos pariatur, deserunt sequi quis vero impedit, veniam iure dolor maiores inventore odio tenetur corrupti aliquam, consequuntur aspernatur reprehenderit.</p>
+
+                    <div class = "two-cols">
+                        <div>
+                            <p>Φάρμας 24, 106 71, Χωριό</p>
+                            <p>Παραγγελίες: 9991234567</p>
+                            <p>Email: info@green-hill.gr</p>
+                        </div>
+                        <div>
+                            <p>Ώρες</p>
+                            <p>Δευ - Παρ: 9:00 π.μ. - 6:00 μ.μ.</p>
+                            <p>Σάβ - Κυρ: 8:00π.μ. - 12:30μμ </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+
+            <div class="footer-boxes">
+                <div>
+                    <img src="./images/logo-green.png">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium ratione vel nulla accusantium saepe incidunt illum ipsa quod architecto natus, alias vitae eos iure sapiente nostrum soluta omnis nesciunt!</p>
+                </div>
+                <form>
+                    <h4>Εγγραφείτε στο newsletter μας</h4>
+                    <input type="email" placeholder="Email" required>
+                    <input type="submit" value="Εγγραφή">
+                </form>
+            </div>
+
+            <p>&copy; 2026 Ο Πράσινος Λόφος. Με επιφύλαξη παντός δικαιώματος.</p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
