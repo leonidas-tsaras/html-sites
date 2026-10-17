@@ -7,6 +7,10 @@
         outline: none;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         --primaryColor: rgb(230, 188, 145);
         --secondaryColor: #f2e8cf;
