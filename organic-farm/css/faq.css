@@ -1,75 +1,74 @@
 main {
-    background-color: var(--bgLightGray);
-    padding: 4rem 0;
+	background-color: var(--bgLightGray);
+	padding: 4rem 0;
 }
 
 main > .wrapper > h1 {
-    text-align: center;
-    margin-bottom: 1rem;
+	text-align: center;
+	margin-bottom: 1rem;
 }
 
 main > .wrapper > p {
-    text-align: center;
-    color: gray;
-    margin-bottom: 3rem;
+	text-align: center;
+	color: #595959;
+	margin-bottom: 3rem;
 }
 
 dl.faq-list {
-    width: 100%;
+	width: 100%;
 }
 
 dl.faq-list dt {
-    background: white;
-    padding: 1.2rem 1.5rem;
-    margin-bottom: 0.25rem;
-    font-weight: bold;
-    font-size: 1.1rem;
-    cursor: pointer;
-    border-left: 5px solid var(--primaryColor);
-    transition: background 0.5s;
-    width: 100%;
+	background: white;
+	padding: 1.2rem 1.5rem;
+	margin-bottom: 0.25rem;
+	font-weight: bold;
+	font-size: 1.1rem;
+	cursor: pointer;
+	border-left: 5px solid var(--primaryColor);
+	transition: background 0.5s;
+	width: 100%;
 }
 
 dl.faq-list dt:hover {
-    background: var(--secondaryColor);
+	background: var(--secondaryColor);
 }
 
 dl.faq-list dd {
-    width: 100%;
-    background: white;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    line-height: 160%;
-    border-left: 5px solid var(--primaryColor);
-    display: none;
-    columns: 2;
-    column-gap: 1.5rem;
-    column-rule: dashed thin lightgray;
-    column-fill: balance;
+	width: 100%;
+	background: white;
+	padding: 1.5rem;
+	margin-bottom: 1rem;
+	line-height: 160%;
+	border-left: 5px solid var(--primaryColor);
+	columns: 2;
+	column-gap: 1.5rem;
+	column-rule: dashed thin lightgray;
+	column-fill: balance;
 }
 
-dl.faq-list dd.open {
-    display: block;
+html.js-enabled dl.faq-list dd:not(.open) {
+	display: none;
 }
 
 @media (width <= 1400px) {
-    main > .wrapper > h1, 
-    main > .wrapper > p {
-        padding-left: 2%;
-        padding-right: 2%;
-    }
+	main > .wrapper > h1,
+	main > .wrapper > p {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 }
 
 @media (width < 800px) {
-    main {
-        padding: 2rem 0;
-    }
-    dl.faq-list dt {
-        font-size: 1rem;
-        padding: 1rem;
-    }
-    dl.faq-list dd {
-        padding: 1rem;
-        column-count: unset;
-    }
+	main {
+		padding: 2rem 0;
+	}
+	dl.faq-list dt {
+		font-size: 1rem;
+		padding: 1rem;
+	}
+	dl.faq-list dd {
+		padding: 1rem;
+		column-count: unset;
+	}
 }

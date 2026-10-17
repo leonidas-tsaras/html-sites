@@ -1,81 +1,100 @@
-        body section {
-            width: 100%;
-            background-color: var(--bgLightGray);
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-        }
+body section {
+	width: 100%;
+	background-color: var(--bgLightGray);
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
 
-        body section .wrapper {
-            display: flex;
-            justify-content: space-between;
-        }
+body section .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
 
-        body section .wrapper figure {
-            width: 35%;
-            text-align: center;
-        }
+body section .wrapper figure {
+	width: 35%;
+	text-align: center;
+}
 
-        body section .wrapper figure img {
-            width: 50%;
-            display: inline-block;
-            margin-bottom: 2rem;
-            border-radius: 50%;
-        }
+body section .wrapper figure img {
+	width: 50%;
+	display: inline-block;
+	margin-bottom: 2rem;
+	border-radius: 50%;
+}
 
-         body section .wrapper figure figcaption {
-            font-weight: bold;
-            font-size: 1.2rem;
-         }
+body section .wrapper figure figcaption {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
 
-        body section .wrapper div.prices {
-            width: 60%;
-        }
+body section .wrapper figure figcaption h2 {
+	font-size: inherit;
+	margin: 0;
+}
 
-        body section .wrapper div.prices div {
-            display: flex;
-            justify-content: space-between;
-        }
+body section .wrapper div.prices {
+	width: 60%;
+}
 
-        body section .wrapper div.prices div h4 {
-            margin-bottom: 0.5rem;
-            margin-top: 1rem;
-        }
+body section .wrapper div.prices div {
+	display: flex;
+	justify-content: space-between;
+}
 
-        body section .wrapper div.prices p {
-            color: gray;
-            border-bottom: solid thin gray;
-        }
+body section .wrapper div.prices div h3,
+body section .wrapper div.prices div span {
+	margin-bottom: 0.5rem;
+	margin-top: 1rem;
+}
 
-        body section .wrapper div.prices p:last-child {
-            border-bottom: none;
-        }
+body section .wrapper div.prices div h3 {
+	font-size: 1.2rem;
+}
 
-        body section.white {
-            background-color: white;
-        }
+body section .wrapper div.prices div span {
+	font-weight: bold;
+}
 
-        @media (width <= 1400px) {
-            body section .wrapper div.prices {
-                padding-left: 2%;
-                padding-right: 2%;
-            }
-        }
+body section .wrapper div.prices p {
+	color: #595959;
+	border-bottom: solid thin gray;
+}
 
-        @media (width < 800px) {
-            body section .wrapper {
-                display: block;
-            }
+body section .wrapper div.prices p:last-child {
+	border-bottom: none;
+}
 
-            body section .wrapper figure {
-                width: 100%;
-                margin-bottom: 2rem;
-            }
+body section.white {
+	background-color: white;
+}
 
-            body section .wrapper div.prices {
-                width: 100%;
-            }
+main > h1.page-title {
+	text-align: center;
+	padding: 3rem 1rem 0;
+}
 
-            body section .wrapper figure img {
-                width: 30%;
-            }
-        }
+@media (width <= 1400px) {
+	body section .wrapper div.prices {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}
+
+@media (width < 800px) {
+	body section .wrapper {
+		display: block;
+	}
+
+	body section .wrapper figure {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	body section .wrapper div.prices {
+		width: 100%;
+	}
+
+	body section .wrapper figure img {
+		width: 30%;
+	}
+}

@@ -1,218 +1,258 @@
-    * {
-        margin: 0;
-        padding: 0;
-        border: none;
-        box-sizing: border-box;
-        text-decoration: none;
-        outline: none;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        --primaryColor: rgb(230, 188, 145);
-        --secondaryColor: #f2e8cf;
-        --textColor: rgb(34, 34, 34);
-        --wrapperWidth: 1400px;
-        --headerHeight: 100px;
-        --lightGray: rgb(204, 204, 204);
-        --headingColor: rgb(175, 85, 0);
-        --bgLightGray: rgb(240, 240, 240);
-
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        color: var(--textColor);
-    }
-
-    .wrapper {
-        width: 100%;
-        max-width: var(--wrapperWidth);
-        margin: auto;
-    }
-
-    h1, h2, h3, h4, h5 {
-        color: black;
-        margin-bottom: 1rem;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-    h4 {
-        font-size: 1.2rem;
-    }
-    p {
-        line-height: 160%;
-        margin-bottom: 0.5rem;
-    }
-
-    nav#top-menu {
-        display: flex;
-        justify-content: space-between;
-        height: var(--headerHeight);
-        align-items: center;
-    }
-
-    nav#top-menu div a {
-        color: white;
-        display: inline-block;
-        transition: all 0.5s;
-        padding: 5px 10px;
-    }
-
-    nav#top-menu div a img {
-        height: var(--headerHeight);
-    }
-
-    nav#top-menu div a:hover {
-        color: var(--primaryColor);
-    }    
-
-    nav#top-menu div#burger-icon {
-        display: none;
-        font-size: 2.5rem;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-@media  (width < 800px) {
-
-    nav#top-menu div#burger-icon {
-        display: block;
-        margin-right: 1rem;
-    }
-    nav#top-menu div#menu-nav {
-        display: none;
-    }
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	text-decoration: none;
 }
 
-    header {
-        height: var(--headerHeight);
-        background-color: var(--textColor);
-    }
+html {
+	scroll-behavior: smooth;
+}
 
-    .skip-link {
-        position: absolute;
-        top: -100px;
-        left: 0;
-        background: var(--textColor);
-        color: white;
-        padding: 0.5rem 1rem;
-        z-index: 10000;
-        transition: top 0.2s;
-    }
+body {
+	--primaryColor: rgb(230, 188, 145);
+	--secondaryColor: #f2e8cf;
+	--textColor: rgb(34, 34, 34);
+	--wrapperWidth: 1400px;
+	--headerHeight: 100px;
+	--lightGray: rgb(204, 204, 204);
+	--headingColor: #7a3c00;
+	--bgLightGray: rgb(240, 240, 240);
 
-    .skip-link:focus {
-        top: 0;
-    }
+	font-family:
+		"Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: var(--textColor);
+}
 
-    a.link-button {
-        display: inline-block;
-        color: black;
-        border: solid thin var(--primaryColor);
-        padding: 1rem 2rem;
-        transition: all 0.5s;
-    }
+.wrapper {
+	width: 100%;
+	max-width: var(--wrapperWidth);
+	margin: auto;
+}
 
-    a.link-button:hover {
-        border-color: black;
-    }
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: black;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.5rem;
+}
+h4 {
+	font-size: 1.2rem;
+}
+p {
+	line-height: 160%;
+	margin-bottom: 0.5rem;
+}
+
+nav#top-menu {
+	display: flex;
+	justify-content: space-between;
+	height: var(--headerHeight);
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+
+:focus-visible {
+	outline: 3px solid #005fcc;
+	outline-offset: 3px;
+}
+
+nav#top-menu div a {
+	color: white;
+	display: inline-block;
+	transition: all 0.5s;
+	padding: 5px 10px;
+}
+
+nav#top-menu div a img {
+	height: var(--headerHeight);
+}
+
+nav#top-menu div a:hover {
+	color: var(--primaryColor);
+}
+
+nav#top-menu div#menu-nav a[aria-current="page"] {
+	color: var(--primaryColor);
+}
+
+nav#top-menu button#burger-icon {
+	display: none;
+	font: inherit;
+	font-size: 2.5rem;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	background: transparent;
+}
+
+@media (width < 800px) {
+	nav#top-menu button#burger-icon {
+		display: block;
+		margin-right: 1rem;
+	}
+	nav#top-menu div#menu-nav {
+		display: none;
+	}
+
+	nav#top-menu div#menu-nav.is-open {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: var(--textColor);
+		padding: 1rem 0;
+		z-index: 1000;
+	}
+}
+
+header {
+	height: var(--headerHeight);
+	background-color: var(--textColor);
+}
+
+.skip-link {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	background: var(--textColor);
+	color: white;
+	padding: 0.5rem 1rem;
+	z-index: 10000;
+	transition: top 0.2s;
+}
+
+.skip-link:focus {
+	top: 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+a.link-button {
+	display: inline-block;
+	color: black;
+	border: solid thin var(--primaryColor);
+	padding: 1rem 2rem;
+	transition: all 0.5s;
+}
+
+a.link-button:hover {
+	border-color: black;
+}
 
 footer {
-    background-color: var(--textColor);
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
+	background-color: var(--textColor);
+	color: white;
+	text-align: center;
+	padding: 2rem 0;
+	margin-top: 3rem;
 }
 
 footer div.footer-boxes {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    gap: 5%;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	gap: 5%;
 }
 
 footer div.footer-boxes div {
-    width: 40%;
-    text-align: center;
+	width: 40%;
+	text-align: center;
 }
 
 footer div.footer-boxes div img {
-    width: 30%;
+	width: 30%;
 }
 
 footer div.footer-boxes form {
-    width: 55%;
-    border: solid thin var(--primaryColor);
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5%;
+	width: 55%;
+	border: solid thin var(--primaryColor);
+	padding: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5%;
 }
 
 footer div.footer-boxes form h4 {
-    width: 100%;
-    text-align: left;
-    color: white;
-    margin-bottom: 1rem;
+	width: 100%;
+	text-align: left;
+	color: white;
+	margin-bottom: 1rem;
 }
 
 footer div.footer-boxes form input[type="email"] {
-    width: 65%;
-    padding: 0.5rem;
-    border: solid thin lightgray;
+	width: 65%;
+	padding: 0.5rem;
+	border: solid thin lightgray;
 }
 
 footer div.footer-boxes form input[type="email"]:focus {
-    border: 1px solid var(--primaryColor);
+	border: 1px solid var(--primaryColor);
 }
 
 footer div.footer-boxes form input[type="submit"] {
-    width: 30%;
-    padding: 0.5rem 0.8rem;
-    cursor: pointer;
-    font-weight: bold;
-    border: solid thin lightgray;
+	width: 30%;
+	padding: 0.5rem 0.8rem;
+	cursor: pointer;
+	font-weight: bold;
+	border: solid thin lightgray;
 }
 
 footer div.footer-boxes form input[type="submit"]:hover {
-    color: var(--primaryColor);
+	color: var(--primaryColor);
 }
 
 footer div.wrapper > p {
-    margin-top: 1rem;
-    border-top: solid thin var(--primaryColor);
-    padding-top: 0.5rem;
+	margin-top: 1rem;
+	border-top: solid thin var(--primaryColor);
+	padding-top: 0.5rem;
 }
 
 @media (width <= 1400px) {
-    footer div.wrapper {
-        padding-left: 2%;
-        padding-right: 2%;
-    }
+	footer div.wrapper {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 }
 
 @media (width < 900px) {
-    footer div.footer-boxes {
-    display: block;
-    }
+	footer div.footer-boxes {
+		display: block;
+	}
 
-    footer div.footer-boxes form {
-        width: 100%;
-    }
-    footer div.footer-boxes div {
-        width: 100%;
-    }
-
+	footer div.footer-boxes form {
+		width: 100%;
+	}
+	footer div.footer-boxes div {
+		width: 100%;
+	}
 }
